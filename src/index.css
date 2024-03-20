@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&family=Lato:wght@400;700&display=swap");
+/* @import url("../src/utils//utils.css"); */
+
+
+@font-face {
+  font-weight: normal;
+  font-family: "Gilroy-Bold";
+  src: url("../src//assets/fonts/Gilroy-Bold.ttf");
+}
+@font-face {
+  font-weight: normal;
+  font-family: "Gilroy-Light";
+  src: url("../src//assets/fonts/Gilroy-Light.ttf");
+}
+@font-face {
+  font-weight: normal;
+  font-family: "Gilroy";
+  src: url("../src//assets/fonts/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-weight: normal;
+  font-family: "Gilroy-Thin";
+  src: url("../src//assets/fonts/Gilroy-Thin.ttf");
+}
+
+:root {
+  --scrollbarBG: var(--white-color);
+  --thumbBG: var(--dark-orange-color);
+
+  --dark-bg-color: #111;
+  --dark-orange-color: #eb8145;
+  --dark-gray-color: #cfcfcf;
+  --white-color: #ffffff;
+  --gold-color: #D1B34F;;
+  --light-green-color: #89b369;
+  --light-black-color: #414141;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--white-color);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  isolation: isolate;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  background-color: #161616;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.toggle-icon {
+  position: fixed;
+  top: 50px;
+  right: 40px;
+  z-index: 100;
+  cursor: pointer;
+  color: var(--dark-orange-color);
+}
